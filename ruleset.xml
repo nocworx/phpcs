@@ -27,8 +27,8 @@
   <rule ref="Generic.Functions.CallTimePassByReference"/>
   <rule ref="Generic.Functions.FunctionCallArgumentSpacing"/>
   <rule ref="Generic.Functions.OpeningFunctionBraceKernighanRitchie"/>
-  <rule ref="Generic.Commenting.Todo"/>
-  <rule ref="Generic.Commenting.Fixme"/>
+<!--  <rule ref="Generic.Commenting.Todo"/> -->
+<!--  <rule ref="Generic.Commenting.Fixme"/> -->
   <rule ref="Generic.Metrics.CyclomaticComplexity"/>
   <rule ref="Generic.Metrics.NestingLevel">
     <properties>
