@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "2385ad1ff886d424475b3c5be2b8485c",
+    "hash": "884962ad179a6460dec02bbbad7ed76b",
     "packages": [
         {
             "name": "simplyadmire/composer-plugins",
@@ -1091,8 +1091,6 @@
     "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": {
-        "php": "~5.6"
-    },
+    "platform": [],
     "platform-dev": []
 }
