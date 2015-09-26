@@ -10,7 +10,11 @@
   <rule ref="Generic.CodeAnalysis.UnusedFunctionParameter"/>
   <rule ref="Generic.CodeAnalysis.UselessOverridingMethod"/>
   <rule ref="Generic.ControlStructures.InlineControlStructure"/>
+  <rule ref="Generic.Files.OneClassPerFile"/>
+  <rule ref="Generic.Files.OneTraitPerFile"/>
+  <rule ref="Generic.Files.OneInterfacePerFile"/>
   <rule ref="Generic.Files.ByteOrderMark"/>
+  <rule ref="Generic.Files.InlineHTML"/>
   <rule ref="Generic.Files.LineEndings"/>
   <rule ref="Generic.Files.LineLength">
     <properties>
@@ -23,6 +27,8 @@
   <rule ref="Generic.Functions.CallTimePassByReference"/>
   <rule ref="Generic.Functions.FunctionCallArgumentSpacing"/>
   <rule ref="Generic.Functions.OpeningFunctionBraceKernighanRitchie"/>
+  <rule ref="Generic.Commenting.Todo"/>
+  <rule ref="Generic.Commenting.Fixme"/>
   <rule ref="Generic.Metrics.CyclomaticComplexity"/>
   <rule ref="Generic.Metrics.NestingLevel">
     <properties>
@@ -37,6 +43,7 @@
   <rule ref="Generic.PHP.DisallowShortOpenTag"/>
   <rule ref="Generic.PHP.ForbiddenFunctions"/>
   <rule ref="Generic.PHP.LowerCaseConstant"/>
+  <rule ref="Generic.PHP.Syntax"/>
   <rule ref="Generic.PHP.NoSilencedErrors">
     <properties>
       <property name="error" value="false"/>
