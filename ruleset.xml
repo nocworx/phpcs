@@ -17,11 +17,9 @@
   <rule ref="Generic.Files.InlineHTML"/>
   <rule ref="Generic.Files.LineEndings"/>
   <rule ref="Generic.Files.LineLength">
-<!--
     <properties>
-      <property name="absoluteLineLimit" value="85"/>
+      <property name="absoluteLineLimit" value="1024"/>
     </properties>
--->
   </rule>
   <rule ref="Generic.Formatting.DisallowMultipleStatements"/>
   <rule ref="Generic.Formatting.MultipleStatementAlignment"/>
