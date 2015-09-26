@@ -82,7 +82,6 @@
       <property name="error" value="true"/>
     </properties>
   </rule>
-  <rule ref="Squiz.PHP.ForbiddenFunctions"/>
   <rule ref="Squiz.PHP.GlobalKeyword"/>
   <rule ref="Squiz.PHP.InnerFunctions"/>
   <rule ref="Squiz.PHP.NonExecutableCode"/>
