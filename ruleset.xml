@@ -45,7 +45,7 @@
     <properties>
       <property name="forbiddenFunctions"
                 type="array"
-                value="sizeof=>count,delete=>unset,is_null=>null,create_function=>null,exec=>null,proc_open=>null,system=>null,eval=>null"/>
+                value="sizeof=>count,delete=>unset,create_function=>null,exec=>null,proc_open=>null,system=>null,eval=>null"/>
     </properties>
   </rule>
   <rule ref="Generic.PHP.LowerCaseConstant"/>
