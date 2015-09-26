@@ -43,7 +43,7 @@
   <rule ref="Generic.PHP.DisallowShortOpenTag"/>
   <rule ref="Generic.PHP.ForbiddenFunctions">
     <properties>
-      <property name="forbiddenFunctionNames"
+      <property name="forbiddenFunctions"
                 type="array"
                 value="sizeof=>count,delete=>unset,is_null=>null,create_function=>null,exec=>null,proc_open=>null,system=>null,eval=>null"/>
     </properties>
