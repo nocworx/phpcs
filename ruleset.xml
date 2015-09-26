@@ -45,7 +45,7 @@
     <properties>
       <property name="forbiddenFunctionNames"
                 type="array"
-                value="eval,system,proc_open,phpinfo,exec,sizeof">
+                value="eval,system,proc_open,phpinfo,exec,sizeof"/>
     </properties>
   </rule>
   <rule ref="Generic.PHP.LowerCaseConstant"/>
