@@ -55,11 +55,6 @@
       <property name="error" value="false"/>
     </properties>
   </rule>
-  <rule ref="Generic.Strings.UnnecessaryStringConcat">
-    <properties>
-      <property name="error" value="false"/>
-    </properties>
-  </rule>
   <rule ref="Generic.WhiteSpace.DisallowTabIndent"/>
   <rule ref="Generic.WhiteSpace.ScopeIndent">
     <properties>
