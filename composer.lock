@@ -5,7 +5,6 @@
         "This file is @generated automatically"
     ],
     "hash": "884962ad179a6460dec02bbbad7ed76b",
-    "content-hash": "6dfe56b37ef5eec03683e7522eaaf5a1",
     "packages": [
         {
             "name": "simplyadmire/composer-plugins",
@@ -540,7 +539,6 @@
         },
         {
             "name": "phpunit/phpunit",
-<<<<<<< HEAD
             "version": "4.8.11",
             "source": {
                 "type": "git",
@@ -551,18 +549,6 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/bdd199472410fd7e32751f9c814c7e06f2c21bd5",
                 "reference": "bdd199472410fd7e32751f9c814c7e06f2c21bd5",
-=======
-            "version": "4.8.10",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "463163747474815c5ccd4ae12b5b355ec12158e8"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/463163747474815c5ccd4ae12b5b355ec12158e8",
-                "reference": "463163747474815c5ccd4ae12b5b355ec12158e8",
->>>>>>> 01c71843c643c16909f67916d76b5abb4454d906
                 "shasum": ""
             },
             "require": {
@@ -621,11 +607,7 @@
                 "testing",
                 "xunit"
             ],
-<<<<<<< HEAD
             "time": "2015-10-07 10:39:46"
-=======
-            "time": "2015-10-01 09:14:30"
->>>>>>> 01c71843c643c16909f67916d76b5abb4454d906
         },
         {
             "name": "phpunit/phpunit-mock-objects",
