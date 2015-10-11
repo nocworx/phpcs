@@ -1,5 +1,5 @@
 {
-  "name": "nexcess/nocworx-phpcs",
+  "name": "nocworx/phpcs",
   "description": "The NocWorx Coding Standard",
   "license": "proprietary",
   "type": "phpcodesniffer-standard",
