@@ -36,9 +36,11 @@
   <rule ref="Squiz.PHP.NonExecutableCode"/>
   <rule ref="Squiz.WhiteSpace.LogicalOperatorSpacing"/>
   <rule ref="Squiz.WhiteSpace.MemberVarSpacing"/>
+  <rule ref="Squiz.Scope.MemberVarScope"/>
   <rule ref="Squiz.WhiteSpace.ScopeClosingBrace"/>
   <rule ref="Squiz.WhiteSpace.ScopeKeywordSpacing"/>
   <rule ref="Squiz.WhiteSpace.SemicolonSpacing"/>
+  <rule ref="Squiz.Scope.StaticThisUsage"/>
   <rule ref="Squiz.WhiteSpace.SuperfluousWhitespace"/>
   <rule ref="Generic.Formatting.DisallowMultipleStatements"/>
   <rule ref="Generic.Formatting.MultipleStatementAlignment"/>
@@ -52,6 +54,7 @@
   <rule ref="Generic.CodeAnalysis.JumbledIncrementer"/>
   <rule ref="Generic.CodeAnalysis.UnconditionalIfStatement"/>
   <rule ref="Generic.CodeAnalysis.UnnecessaryFinalModifier"/>
+  <rule ref="Generic.Strings.UnnecessaryStringConcat"/>
   <rule ref="Generic.CodeAnalysis.UnusedFunctionParameter"/>
   <rule ref="Generic.CodeAnalysis.UselessOverridingMethod"/>
   <rule ref="Generic.ControlStructures.InlineControlStructure"/>
@@ -88,6 +91,7 @@
   </rule>
   <rule ref="Generic.WhiteSpace.ScopeIndent">
     <properties>
+      <property name="indent" value="2"/>
       <property name="ignoreIndentationTokens" type="array" value="T_COMMENT,T_DOC_COMMENT_OPEN_TAG"/>
     </properties>
   </rule>
