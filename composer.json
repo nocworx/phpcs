@@ -4,10 +4,10 @@
   "license": "proprietary",
   "type": "phpcodesniffer-standard",
   "require": {
-    "squizlabs/php_codesniffer": "~2.0",
-    "simplyadmire/composer-plugins": "~2.0"
+    "squizlabs/php_codesniffer": "^2.0",
+    "simplyadmire/composer-plugins": "^2.0"
   },
   "require-dev": {
-    "phpunit/phpunit": "~4.0"
+    "phpunit/phpunit": "^4.0"
   }
 }
