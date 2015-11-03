@@ -33,8 +33,6 @@ class Brace {
     if ($this->test()) {
       echo 'blank line';
     }
-
-
   }
 
   /**
