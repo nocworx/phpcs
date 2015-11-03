@@ -1,5 +1,5 @@
-# NocWorx PHP Coding Standard
+# NocWorx Standards
 
-### Basics
+### PHP
 
-This standard is based on [PSR-2](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md) but differs as described below.
+Our [coding standard for all PHP](php/README.md) can be checked using PHP Code Sniffer.
