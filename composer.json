@@ -1,6 +1,6 @@
 {
-  "name": "nocworx/standards",
-  "description": "The NocWorx Coding Standard",
+  "name": "nocworx/phpcs",
+  "description": "NocWorx PHP Codesniffer",
   "license": "proprietary",
   "type": "phpcodesniffer-standard",
   "require": {
