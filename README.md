@@ -19,6 +19,7 @@
   - Always encapsulate variables and function/method calls in curley braces
 - All text must use language string placeholders. No English (or other language) in the code.
 - Always a single space around operators (including assignment operator)
+- Always a single space after a keyword (if, while, etc.)
 - One space after but not before a comma separator unless at the end of a line
 - Arrays
   - Never use `array()` - use `[]` instead
@@ -54,6 +55,7 @@
   - All conditions should be explicit and evaluate to a boolean
   - Falsey checks are not acceptable BAD: `if($s)` Unless `$x` is boolean
   - Do not assign while checking. BAD: `if (x = something()) {`
+- Use paren bracket style delimiters for preg_* functions and the like `preg_match('(^\d+)', $text)`
 - No trailing whitespace on any line
 - Every file must end with a single new line character
 - For any case not explicitly addressed here, consult [PSR-2](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md)
