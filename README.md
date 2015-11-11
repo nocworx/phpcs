@@ -42,6 +42,7 @@
 - Classes should not contain public properties. Use setters and getters.
 - Ternary
   - Never nest ternary statements
+  - Wrap the condition in ()
   - Must be contained on either one or three lines
   - Never use the shorthand version `?:`
 - Every block (if, while, etc.) must be contained in braces
