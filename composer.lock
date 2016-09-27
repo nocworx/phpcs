@@ -4,25 +4,25 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "11eaa2463dc182c4adef82caf5b51bc3",
+    "hash": "2e2cd35e62d41d4f79e9b692732f2a2d",
     "content-hash": "72da1e6ec2ece02c6f6811954d4de8dd",
     "packages": [
         {
             "name": "simplyadmire/composer-plugins",
-            "version": "2.0.1",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SimplyAdmire/ComposerPlugins.git",
-                "reference": "9e0c76952a71caa1d953ee5779b7d4c4c298d142"
+                "reference": "d8380f670694c1c2330b22591ca74adc82cffe19"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SimplyAdmire/ComposerPlugins/zipball/9e0c76952a71caa1d953ee5779b7d4c4c298d142",
-                "reference": "9e0c76952a71caa1d953ee5779b7d4c4c298d142",
+                "url": "https://api.github.com/repos/SimplyAdmire/ComposerPlugins/zipball/d8380f670694c1c2330b22591ca74adc82cffe19",
+                "reference": "d8380f670694c1c2330b22591ca74adc82cffe19",
                 "shasum": ""
             },
             "require": {
-                "composer-plugin-api": "1.0.0",
+                "composer-plugin-api": "^1.0",
                 "squizlabs/php_codesniffer": "*"
             },
             "type": "composer-plugin",
@@ -57,7 +57,7 @@
                 "standards",
                 "typo3"
             ],
-            "time": "2015-06-21 20:23:06"
+            "time": "2016-05-12 11:58:38"
         },
         {
             "name": "squizlabs/php_codesniffer",
