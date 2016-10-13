@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "2e2cd35e62d41d4f79e9b692732f2a2d",
-    "content-hash": "72da1e6ec2ece02c6f6811954d4de8dd",
+    "hash": "16379f6b6753144346a20e2cc0ea3f57",
+    "content-hash": "265eb306d18b61c8b040d1d3dd2af79d",
     "packages": [
         {
             "name": "simplyadmire/composer-plugins",
