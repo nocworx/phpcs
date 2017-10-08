@@ -24,6 +24,7 @@ class Comments {
    *
    * @param string $hi Greeting message
    * @param string $there
+   * @suppress PhanUndeclaredFunction
    */
   public function noParams($hi, $there) {
     go($hi, $there);
@@ -66,7 +67,7 @@ class Comments {
     if (empty($there)) {
       throw new Exception();
     }
-    
+
     return $hi;
   }
 }
