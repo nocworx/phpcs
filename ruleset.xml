@@ -2,9 +2,22 @@
 <ruleset name="nocworx-phpcs">
   <description>NocWorx PHP Coding Standard</description>
 
+  <rule ref="Generic.Files.LineLength">
+    <properties>
+      <property name="lineLimit" value="80"/>
+      <property name="absoluteLineLimit" value="120"/>
+    </properties>
+  </rule>
+
+  <!-- @todo RE-ENABLE
+
   <arg name="tab-width" value="2"/>
 
+  -->
+
   <!-- PSR2 -->
+
+  <!-- @todo RE-ENABLE
 
   <rule ref="PSR2">
    <exclude name="Generic.Functions.FunctionCallArgumentSpacing"/>
@@ -33,7 +46,11 @@
   <rule ref="PSR2.Namespaces.NamespaceDeclaration"/>
   <rule ref="PSR2.Namespaces.UseDeclaration"/>
 
+  -->
+
   <!-- Squiz -->
+
+  <!-- @todo RE-ENABLE
 
   <rule ref="Squiz.Classes.ValidClassName"/>
 
@@ -106,7 +123,11 @@
     <severity>0</severity>
   </rule>
 
+  -->
+
   <!-- Generic -->
+
+  <!-- @todo RE-ENABLE
 
   <rule ref="Generic.Classes.DuplicateClassName"/>
 
@@ -176,12 +197,20 @@
     </properties>
   </rule>
 
+  -->
+
   <!-- MySource -->
+
+  <!-- @todo RE-ENABLE
 
   <rule ref="MySource.PHP.EvalObjectFactory"/>
   <rule ref="MySource.PHP.GetRequestData"/>
 
+  -->
+
   <!-- PEAR -->
+
+  <!-- @todo RE-ENABLE
 
   <rule ref="PEAR.Functions.ValidDefaultValue"/>
 
@@ -191,11 +220,17 @@
     </properties>
   </rule>
 
+  -->
+
   <!-- Zend -->
+
+  <!-- @todo RE-ENABLE
 
   <rule ref="Zend.NamingConventions.ValidVariableName">
     <exclude name="Zend.NamingConventions.ValidVariableName.MemberVarNotCamelCaps"/>
     <exclude name="Zend.NamingConventions.ValidVariableName.NotCamelCaps"/>
   </rule>
+
+  -->
 
 </ruleset>
