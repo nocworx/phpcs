@@ -5,7 +5,7 @@
 - Indent all block bodies one level (2 spaces)
 - Closing brace of any block is -2 spaces from the body's indention and on its own line (exceptions for `else`, `elseif`, `do-while`, and multiline function call/declaration)
 - Function calls or declarations needing multiple lines, follow indention guidelines for blocks. The opening brace for a declaration appears on the same line as the closing paranthesis.
-- Line length: 80 characters soft limit. No hard limit but more than 80 characters will be considered unreasonable.
+- Line length: 79 + \n
 - Comments
   1. Use doc block style comments on each files, classes, functions, methods, and class properties
   - File doc block must include our legal template
