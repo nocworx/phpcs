@@ -2,10 +2,17 @@
 <ruleset name="NocWorx">
   <description>NocWorx PHP Coding Standard</description>
 
-<!-- Generic Files -->
+  <!-- Line Length -->
   <rule ref="Generic.Files.LineLength">
     <properties>
-      <property name="absoluteLineLimit" value="79"/>
+    <property name="absoluteLineLimit" value="79"/>
+    </properties>
+  </rule>
+
+  <!-- Indent 2 spaces -->
+  <rule ref="Generic.WhiteSpace.ScopeIndent">
+    <properties>
+    <property name="indent" value="2" />
     </properties>
   </rule>
 
