@@ -12,6 +12,7 @@
   <!-- Indent 2 spaces -->
   <rule ref="Generic.WhiteSpace.ScopeIndent">
     <properties>
+    <property name="tabIndent" value="false" />
     <property name="indent" value="2" />
     </properties>
   </rule>
