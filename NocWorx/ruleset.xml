@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<ruleset name="NocWorx">
+  <description>NocWorx PHP Coding Standard</description>
+
+<!-- Generic Files -->
+  <rule ref="Generic.Files.LineLength">
+    <properties>
+      <property name="absoluteLineLimit" value="79"/>
+    </properties>
+  </rule>
+
+</ruleset>
