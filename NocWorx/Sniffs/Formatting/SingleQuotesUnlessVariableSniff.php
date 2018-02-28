@@ -7,7 +7,6 @@ use PHP_CodeSniffer\Files\File;
 class SingleQuotesUnlessVariableSniff implements Sniff
 {
 
-
   /**
    * Returns the token types that this sniff is interested in.
    *
@@ -28,42 +27,74 @@ class SingleQuotesUnlessVariableSniff implements Sniff
  *
  * @return void
  */
-public function process(File $phpcsFile, $stackPtr) {
-  $tokens = $phpcsFile->getTokens();
+  public function process(File $phpcsFile, $stackPtr) {
+    $tokens = $phpcsFile->getTokens();
 
-  if ($tokens[$stackPtr]['type'] === 'T_CONSTANT_ENCAPSED_STRING') {
+    if ($tokens[$stackPtr]['type'] === 'T_CONSTANT_ENCAPSED_STRING') {
 
-    // if it starts with a double quote
-    if ($tokens[$stackPtr]['content']{0} ==='"') {
+      // if it starts with a double quote
+      if ($tokens[$stackPtr]['content']{0} ==='"') {
 
-      // ...and contains a single quote, we're good.
-      if (strpos($tokens[$stackPtr]['content'] , "'")) {
-        return;
+        // ...and contains a single quote, we're good.
+        if (strpos($tokens[$stackPtr]['content'] , "'")) {
+          return;
+        }
+        // ...or contains an escaped character, we're good
+        if ($this->_containsEscapedChrs($tokens[$stackPtr]['content'])) {
+          return;
+        }
+
+        // Otherwise, it's an error.
+        $error = 'Only use Double Quotes when a variable is being ' .
+        'inserted.';
+        $data = [trim($tokens[$stackPtr]['content'])];
+
+        $phpcsFile->addError(
+          $error,
+          $stackPtr,
+          'FOUND',
+          $data
+        );
       }
-      // ...and contains an escaped character
-      if (
-        strpos($tokens[$stackPtr]['content'] , '\n') ||
-        strpos($tokens[$stackPtr]['content'] , '\t') ||
-        strpos($tokens[$stackPtr]['content'] , '\\') ||
-        strpos($tokens[$stackPtr]['content'] , '\v') ||
-        strpos($tokens[$stackPtr]['content'] , '\a')
-      ) {
-        return;
-      }
-
-      // Otherwise, it's an error.
-      $error = 'Only use Double Quotes when a variable is being ' .
-      'inserted.';
-      $data = [trim($tokens[$stackPtr]['content'])];
-
-      $phpcsFile->addError(
-        $error,
-        $stackPtr,
-        'FOUND',
-        $data
-      );
     }
   }
-}
 
+  /**
+   * Check the string for escaped characters
+   *
+   * @param string $content the content to check
+   * @return bool
+   */
+
+  protected function _containsEscapedChrs(string $content) : bool {
+    $allowedChrs = [
+      '\0',
+      '\1',
+      '\2',
+      '\3',
+      '\4',
+      '\5',
+      '\6',
+      '\7',
+      '\n',
+      '\r',
+      '\f',
+      '\t',
+      '\v',
+      '\x',
+      '\b',
+      '\e',
+      '\u',
+      '\'',
+    ];
+
+    foreach($allowedChrs as $testChar) {
+      if ((strpos($content, $testChar) !== false)) {
+        return true;
+      }
+    }
+
+    return false;
+
+  }
 }
