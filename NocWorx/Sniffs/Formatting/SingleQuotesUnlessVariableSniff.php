@@ -23,9 +23,10 @@ class SingleQuotesUnlessVariableSniff implements Sniff
     /**
      * Processes this sniff, when one of its tokens is encountered.
      *
-     * @param \PHP_CodeSniffer\Files\File $phpcsFile The current file being checked.
-     * @param int                         $stackPtr  The position of the current token in the
-     *                                               stack passed in $tokens.
+     * @param \PHP_CodeSniffer\Files\File $phpcsFile The current file being
+     *  checked.
+     * @param int $stackPtr The position of the current token in the
+     *  stack passed in $tokens.
      *
      * @return void
      */
@@ -37,17 +38,19 @@ class SingleQuotesUnlessVariableSniff implements Sniff
             
             // if it starts with a double quote
             if ($tokens[$stackPtr]['content']{0} ==='"') {
-                // and contains a single quote, we're good.
+                // ...and contains a single quote, we're good.
                 if (strpos($tokens[$stackPtr]['content'] , "'")) {
                     return;
                 }
-                // and contains a carrage return
+
+                // ...and contains a carrage return
                 if (strpos($tokens[$stackPtr]['content'] , '\n')) {
                     return;
                 }
             
-
-                $error = 'Only use Double Quotes when a variable is being inserted.';
+                // Otherwise, it's an error.
+                $error = 'Only use Double Quotes when a variable is being ' .
+                    'inserted.';
                 $data = [trim($tokens[$stackPtr]['content'])];
                 
                 $phpcsFile->addError(
@@ -58,17 +61,6 @@ class SingleQuotesUnlessVariableSniff implements Sniff
                 );
             }
         }
-/*
-        if ($tokens[$stackPtr]['content']{0} === '#') {
-            $error = 'Hash comments are prohibited; found %s';
-            $data  = array(trim($tokens[$stackPtr]['content']));
-            $phpcsFile->addError($error, $stackPtr, 'Found', $data);
-        }
-*/
+    }
 
-    }//end process()
-
-
-}//end class
-
-?>
+}
