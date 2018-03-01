@@ -4,7 +4,7 @@
   "license": "proprietary",
   "type": "phpcodesniffer-standard",
   "require": {
-    "squizlabs/php_codesniffer": "^3",
+    "squizlabs/php_codesniffer": "^3.2",
     "simplyadmire/composer-plugins": "^2.1"
   },
   "require-dev": {
