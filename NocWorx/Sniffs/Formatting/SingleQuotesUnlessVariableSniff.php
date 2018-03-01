@@ -86,10 +86,19 @@ class SingleQuotesUnlessVariableSniff implements Sniff
       '\e',
       '\u',
       '\'',
+      '\"',
     ];
 
     foreach($allowedChrs as $testChar) {
       if ((strpos($content, $testChar) !== false)) {
+        /*
+         * Line ends are tricky. We don't want to trigger on a line ending
+         * in \" becase we aren't escaping the last chr.
+         */
+        if (strpos($content, $testChar) === (strlen($content) - 2) ) {
+          return false;
+        }
+
         return true;
       }
     }
