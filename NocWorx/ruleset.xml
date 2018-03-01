@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<ruleset name="NocWorx">
+  <description>NocWorx PHP Coding Standard</description>
+
+  <!-- Line Length -->
+  <rule ref="Generic.Files.LineLength">
+    <properties>
+    <property name="absoluteLineLimit" value="79"/>
+    </properties>
+  </rule>
+
+  <!-- Indent 2 spaces -->
+  <rule ref="Generic.WhiteSpace.ScopeIndent">
+    <properties>
+    <property name="tabIndent" value="false" />
+    <property name="indent" value="2" />
+    </properties>
+  </rule>
+
+</ruleset>
