@@ -59,4 +59,12 @@
 - Use paren bracket style delimiters for preg_* functions and the like `preg_match('(^\d+)', $text)`
 - No trailing whitespace on any line
 - Every file must end with a single new line character
+
+- All PHP functions should have a return typehint if it returns a value.
+ 1. If a return typehint causes the line to exceed the maximum line length then the colon indicating a return type hint should stay with the closing parenthesis.
+ 1. If a function's arguments fit on a single line, the typehint should be on the next line and indented.
+ 1. If a function's arguments do not fit on a single line, the typehint should follow the closing parenthesis.
+ 1. In both cases 2 & 3, the opening brace should stay with the typehint.
+ 1. The return typehint should fit on a single line. When it does not, use a class alias to shorten it.
+
 - For any case not explicitly addressed here, consult [PSR-2](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md)
