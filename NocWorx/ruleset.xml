@@ -23,4 +23,8 @@
       </properties>
   </rule>
 
+  <!-- Enforce Short Array Syntax -->
+  <rule ref="Generic.Arrays.DisallowLongArraySyntax">
+  </rule>
+  
 </ruleset>
