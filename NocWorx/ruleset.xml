@@ -27,4 +27,18 @@
   <rule ref="Generic.Arrays.DisallowLongArraySyntax">
   </rule>
   
+  <!-- A space around equals signs in function declarations -->
+  <rule ref="Squiz.Functions.FunctionDeclarationArgumentSpacing">
+      <properties>
+          <property name="equalsSpacing" value="1" />
+      </properties>
+  </rule>
+
+  <!-- No trailing whitespace but blank lines are ok -->
+  <rule ref="Squiz.WhiteSpace.SuperfluousWhitespace">
+    <properties>
+      <property name="ignoreBlankLines" value="true" />
+    </properties>
+  </rule>
+  
 </ruleset>
