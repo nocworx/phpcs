@@ -12,25 +12,35 @@
   <!-- Indent 2 spaces -->
   <rule ref="Generic.WhiteSpace.ScopeIndent">
     <properties>
-    <property name="tabIndent" value="false" />
-    <property name="indent" value="2" />
+      <property name="tabIndent" value="false" />
+      <property name="indent" value="2" />
     </properties>
   </rule>
 
+  <!-- Space before and after an operator -->
   <rule ref="Squiz.WhiteSpace.OperatorSpacing">
     <properties>
       <property name="ignoreNewlines" value="true" />
-      </properties>
+    </properties>
   </rule>
 
   <!-- Enforce Short Array Syntax -->
   <rule ref="Generic.Arrays.DisallowLongArraySyntax">
   </rule>
-  
+
   <!-- A space around equals signs in function declarations -->
-  <rule ref="Squiz.Functions.FunctionDeclarationArgumentSpacing">
+
+  <rule ref="Squiz.Functions">
+      <exclude name="Generic.Sniffs.Functions.OpeningFunctionBraceBsdAllmanSniff"/>
+      <exclude name="Squiz.Functions.MultiLineFunctionDeclaration.BraceOnSameLine"/>
+      <exclude name="Squiz.Functions.MultiLineFunctionDeclaration.ContentAfterBrace"/>
+      <exclude name="Squiz.Functions.MultiLineFunctionDeclaration.BraceIndent"/>
+      <exclude name="Squiz.Functions.MultiLineFunctionDeclaration.Indent"/>
+      
       <properties>
-          <property name="equalsSpacing" value="1" />
+        <property name="ignoreComments" value="false" />
+        <property name="equalsSpacing" value="1" />
+        <property name="indent" value="2" />
       </properties>
   </rule>
 
@@ -40,5 +50,12 @@
       <property name="ignoreBlankLines" value="true" />
     </properties>
   </rule>
-  
+
+  <!-- Enforce 0 spaces around parentheses -->
+  <rule ref="PEAR.Functions.FunctionCallSignature.SpaceAfterOpenBracket">
+  </rule>
+
+  <rule ref="PEAR.Functions.FunctionCallSignature.SpaceAfterCloseBracket">
+  </rule>
+
 </ruleset>
