@@ -7,7 +7,7 @@
  * @license   https://github.com/squizlabs/PHP_CodeSniffer/blob/master/licence.txt BSD Licence
  */
 
-namespace NocWorx\\Squiz\Sniffs\ControlStructures;
+namespace NocWorx\Sniffs\ControlStructures;
 
 use PHP_CodeSniffer\Sniffs\Sniff;
 use PHP_CodeSniffer\Files\File;
@@ -44,7 +44,7 @@ class ForLoopDeclarationSniff implements Sniff
      *
      * @var bool
      */
-    public $ignoreNewLines = false;
+    public $ignoreNewLines = true;
 
 
     /**
