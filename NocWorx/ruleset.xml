@@ -31,17 +31,17 @@
   <!-- A space around equals signs in function declarations -->
 
   <rule ref="Squiz.Functions">
-      <exclude name="Generic.Sniffs.Functions.OpeningFunctionBraceBsdAllmanSniff"/>
-      <exclude name="Squiz.Functions.MultiLineFunctionDeclaration.BraceOnSameLine"/>
-      <exclude name="Squiz.Functions.MultiLineFunctionDeclaration.ContentAfterBrace"/>
-      <exclude name="Squiz.Functions.MultiLineFunctionDeclaration.BraceIndent"/>
-      <exclude name="Squiz.Functions.MultiLineFunctionDeclaration.Indent"/>
-      
-      <properties>
-        <property name="ignoreComments" value="false" />
-        <property name="equalsSpacing" value="1" />
-        <property name="indent" value="2" />
-      </properties>
+    <exclude name="Generic.Sniffs.Functions.OpeningFunctionBraceBsdAllmanSniff"/>
+    <exclude name="Squiz.Functions.MultiLineFunctionDeclaration.BraceOnSameLine"/>
+    <exclude name="Squiz.Functions.MultiLineFunctionDeclaration.ContentAfterBrace"/>
+    <exclude name="Squiz.Functions.MultiLineFunctionDeclaration.BraceIndent"/>
+    <exclude name="Squiz.Functions.MultiLineFunctionDeclaration.Indent"/>
+    
+    <properties>
+      <property name="ignoreComments" value="false" />
+      <property name="equalsSpacing" value="1" />
+      <property name="indent" value="2" />
+    </properties>
   </rule>
 
   <!-- No trailing whitespace but blank lines are ok -->
@@ -58,4 +58,54 @@
   <rule ref="PEAR.Functions.FunctionCallSignature.SpaceAfterCloseBracket">
   </rule>
 
+  <!-- camelCase method names -->
+  <rule ref="Generic.NamingConventions.CamelCapsFunctionName">
+    <properties>
+      <property name="strict" value="false" />
+    </properties>
+  </rule>
+
+  <rule ref="PSR2.Classes.ClassDeclaration">
+    <exclude name="PSR2.Classes.ClassDeclaration.OpenBraceNewLine"/>
+    <exclude name="PSR2.Classes.ClassDeclaration.CloseBraceAfterBody"/>
+    <exclude name="PSR2.Classes.ClassDeclaration.ExtendsLine" />
+    <exclude name="PSR2.Classes.ClassDeclaration.ImplementsLine"/>
+    <exclude name="PSR2.Classes.ClassDeclaration.InterfaceWrongIndent"/>
+    <exclude name="PSR2.Classes.ClassDeclaration.SpaceBeforeName"/>
+    <properties>
+      <property name="indent" value="2" />
+    </properties>
+  </rule>
+
+  <rule ref="PSR2">
+    <exclude name="Squiz.WhiteSpace.ScopeClosingBrace.ContentBefore"/>
+    <exclude name="PSR2.Classes.PropertyDeclaration.Underscore"/>
+    <exclude name="PSR2.Methods.MethodDeclaration.Underscore"/>
+    <exclude name="PSR2.ControlStructures.ControlStructureSpacing.SpacingAfterOpenBrace"/>
+    <exclude name="Squiz.ControlStructures.ForEachLoopDeclaration.SpaceAfterOpen"/>
+    <exclude name="Squiz.ControlStructures.ForEachLoopDeclaration.SpaceBeforeClose"/>
+    <exclude name="PSR2.Methods.FunctionCallSignature.Indent"/>
+    <exclude name="PSR2.Methods.FunctionCallSignature.CloseBracketLine"/>
+    <exclude name="PSR2.ControlStructures.SwitchDeclaration.TerminatingComment"/>
+    
+    <!-- these two can be reincluded once we've gone full on namespaced. -->
+    <exclude name="PSR1.Classes.ClassDeclaration.MissingNamespace"/>
+    <exclude name="Squiz.Classes.ValidClassName.NotCamelCaps"/>
+
+    <!-- We may remove this exclusion. A decision has not yet been made -->
+    <exclude name="PSR2.Namespaces.UseDeclaration.MultipleDeclarations"/>
+
+    <!-- Discuss implementing this one -->
+    <exclude name="PSR2.Methods.FunctionCallSignature.MultipleArguments"/>
+
+    <exclude name="PSR2.Methods.FunctionCallSignature.ContentAfterOpenBracket"/>
+    <exclude name="Squiz.ControlStructures.ForEachLoopDeclaration.SpacingBeforeAs"/>
+
+    <!-- We need to implement this one but we can't because there are files that need to be fixed first-->
+    <exclude name="PEAR.Functions.ValidDefaultValue.NotAtEnd"/>
+    
+    <properties>
+      <property name="indent" value="2" />
+    </properties>
+  </rule>
 </ruleset>
