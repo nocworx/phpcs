@@ -31,17 +31,17 @@
   <!-- A space around equals signs in function declarations -->
 
   <rule ref="Squiz.Functions">
-    <exclude name="Generic.Sniffs.Functions.OpeningFunctionBraceBsdAllmanSniff"/>
-    <exclude name="Squiz.Functions.MultiLineFunctionDeclaration.BraceOnSameLine"/>
-    <exclude name="Squiz.Functions.MultiLineFunctionDeclaration.ContentAfterBrace"/>
-    <exclude name="Squiz.Functions.MultiLineFunctionDeclaration.BraceIndent"/>
-    <exclude name="Squiz.Functions.MultiLineFunctionDeclaration.Indent"/>
-    
-    <properties>
-      <property name="ignoreComments" value="false" />
-      <property name="equalsSpacing" value="1" />
-      <property name="indent" value="2" />
-    </properties>
+      <exclude name="Generic.Sniffs.Functions.OpeningFunctionBraceBsdAllmanSniff"/>
+      <exclude name="Squiz.Functions.MultiLineFunctionDeclaration.BraceOnSameLine"/>
+      <exclude name="Squiz.Functions.MultiLineFunctionDeclaration.ContentAfterBrace"/>
+      <exclude name="Squiz.Functions.MultiLineFunctionDeclaration.BraceIndent"/>
+      <exclude name="Squiz.Functions.MultiLineFunctionDeclaration.Indent"/>
+      
+      <properties>
+        <property name="ignoreComments" value="false" />
+        <property name="equalsSpacing" value="1" />
+        <property name="indent" value="2" />
+      </properties>
   </rule>
 
   <!-- No trailing whitespace but blank lines are ok -->
