@@ -27,6 +27,9 @@
     <exclude name="Squiz.WhiteSpace.ScopeClosingBrace.ContentBefore"/>
     <exclude name="Squiz.ControlStructures.ForLoopDeclaration"/>
     
+    <!-- We have at least one case (Invoices.php:237) where the length of the line exceeds 80 chrs. The only solution is to break the line at the ()'s evne though there are no parameters. We can fix this by adding an "ignoreNewLines" parameter but I haven't yet. Once that is implemented, remove this exclude. -->
+    <exclude name="Squiz.Functions.FunctionDeclarationArgumentSpacing.SpacingBetween"/>
+    
     <!-- these two can be reincluded once we've gone full on namespaced. -->
     <exclude name="PSR1.Classes.ClassDeclaration.MissingNamespace"/>
     <exclude name="Squiz.Classes.ValidClassName.NotCamelCaps"/>
@@ -55,6 +58,13 @@
 
   <!-- Enforce Short Array Syntax -->
   <rule ref="Generic.Arrays.DisallowLongArraySyntax">
+  </rule>
+
+  <rule ref="Generic.Files.LineLength">
+    <properties>
+      <property name="absoluteLineLimit" value="80"/>
+      <property name="ignoreComments" value="true" />
+    </properties>
   </rule>
 
   <!-- Enforce 0 spaces around parentheses -->
