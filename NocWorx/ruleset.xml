@@ -26,7 +26,7 @@
     <exclude name="Squiz.Functions.MultiLineFunctionDeclaration.Indent"/>
     <exclude name="Squiz.WhiteSpace.ScopeClosingBrace.ContentBefore"/>
     <exclude name="Squiz.ControlStructures.ForLoopDeclaration"/>
-    
+        
     <!-- these two can be reincluded once we've gone full on namespaced. -->
     <exclude name="PSR1.Classes.ClassDeclaration.MissingNamespace"/>
     <exclude name="Squiz.Classes.ValidClassName.NotCamelCaps"/>
@@ -55,6 +55,13 @@
 
   <!-- Enforce Short Array Syntax -->
   <rule ref="Generic.Arrays.DisallowLongArraySyntax">
+  </rule>
+
+  <rule ref="Generic.Files.LineLength">
+    <properties>
+      <property name="absoluteLineLimit" value="80"/>
+      <property name="ignoreComments" value="true" />
+    </properties>
   </rule>
 
   <!-- Enforce 0 spaces around parentheses -->
