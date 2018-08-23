@@ -44,7 +44,7 @@
   - Never nest ternary statements
   - Wrap the condition in ()
   - Must be contained on either one or three lines
-  - The shorthand `?:` may be used as a substitute for the expression `empty($a) ? $a : $b`
+  - The shorthand `?:` may be used as a substitute for the expression `empty($a) ? $a : $b` (note, `$a` must be defined)
 - Every block (if, while, etc.) must be contained in braces
 - Concatentation operator at the end of the line for multiline statements
 - Multiline strings should be concatenated. Indent two spaces from indention of the first line.
