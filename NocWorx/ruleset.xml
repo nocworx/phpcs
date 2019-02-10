@@ -26,7 +26,7 @@
     <exclude name="Squiz.Functions.MultiLineFunctionDeclaration.Indent"/>
     <exclude name="Squiz.WhiteSpace.ScopeClosingBrace.ContentBefore"/>
     <exclude name="Squiz.ControlStructures.ForLoopDeclaration"/>
-        
+
     <!-- these two can be reincluded once we've gone full on namespaced. -->
     <exclude name="PSR1.Classes.ClassDeclaration.MissingNamespace"/>
     <exclude name="Squiz.Classes.ValidClassName.NotCamelCaps"/>
@@ -59,8 +59,8 @@
 
   <rule ref="Generic.Files.LineLength">
     <properties>
-      <property name="absoluteLineLimit" value="80"/>
-      <property name="ignoreComments" value="true" />
+      <property name="absoluteLineLimit" value="79"/>
+      <property name="ignoreComments" value="false"/>
     </properties>
   </rule>
 
