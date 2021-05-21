@@ -33,7 +33,7 @@ class SingleQuotesUnlessVariableSniff implements Sniff
     if ($tokens[$stackPtr]['type'] === 'T_CONSTANT_ENCAPSED_STRING') {
 
       // if it starts with a double quote
-      if ($tokens[$stackPtr]['content']{0} ==='"') {
+      if (substr($tokens[$stackPtr]['content'], 0, 1) === '"') {
 
         // ...and contains a single quote, we're good.
         if (strpos($tokens[$stackPtr]['content'] , "'")) {
