@@ -59,7 +59,7 @@
 
   <rule ref="Generic.Files.LineLength">
     <properties>
-      <property name="absoluteLineLimit" value="79"/>
+      <property name="absoluteLineLimit" value="120"/>
       <property name="ignoreComments" value="false"/>
     </properties>
   </rule>
