@@ -1,8 +1,9 @@
 # NocWorx PHP Coding Standard
 
-1. Indention: always 2 spaces
+1. This has been updated to reflect adherence to PSR12. Some legacy Sniffs are still supported, these will be removed over time.
+- Indention: always 4 spaces
 - Always place opening brace on same line of block declaration
-- Indent all block bodies one level (2 spaces)
+- Indent all block bodies one level (4 spaces)
 - Closing brace of any block is -2 spaces from the body's indention and on its own line (exceptions for `else`, `elseif`, `do-while`, and multiline function call/declaration)
 - Function calls or declarations needing multiple lines, follow indention guidelines for blocks. The opening brace for a declaration appears on the same line as the closing paranthesis.
 - Line length: 120
