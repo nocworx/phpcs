@@ -22,6 +22,27 @@ $services
 $container->compile();
 
 $finder = (new PhpCsFixer\Finder())
+  ->in('generated');
+return (new PhpCsFixer\Config())
+  ->setRiskyAllowed(true)
+  ->registerCustomFixers([
+    $container->get(Symplify\CodingStandard\Fixer\ArrayNotation\StandaloneLineInMultilineArrayFixer::class),
+  ])
+  ->setRules(
+  [
+    'align_multiline_comment' => ['comment_type' => 'all_multiline'],
+    'array_indentation' => true,
+    'array_syntax' => ['syntax' => 'short'],
+    'backtick_to_shell_exec' => true,
+    'braces' => true,
+    'indentation_type' => true,
+    'method_chaining_indentation' => true,
+    'Symplify/codingstandard' => true,
+  ]
+)
+  ->setFinder($finder)->setIndent('  ');
+
+/*$finder = (new PhpCsFixer\Finder())
   ->in(__DIR__);
 
 return (new PhpCsFixer\Config())
@@ -35,4 +56,4 @@ return (new PhpCsFixer\Config())
     'Symplify/codingstandard' => true,
     'trailing_comma_in_multiline' => true,
   ])
-  ->setFinder($finder);
+  ->setFinder($finder);*/
