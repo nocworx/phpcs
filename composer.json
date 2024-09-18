@@ -5,12 +5,18 @@
   "type": "phpcodesniffer-standard",
   "require": {
     "squizlabs/php_codesniffer": "^3.2",
-    "symplify/coding-standard": "^12.2",
+    "mdk999/coding-standard": "^1.00",
     "slevomat/coding-standard": "^8.15",
     "friendsofphp/php-cs-fixer": "^3.64",
     "symfony/dependency-injection": "^7.1",
     "symfony/config": "^7.1"
   },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/mdk999/coding-standard"
+    }
+  ],
   "require-dev": {
     "roave/security-advisories": "dev-latest",
     "phpunit/phpunit": "^11.3",
