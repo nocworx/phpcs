@@ -42,18 +42,3 @@ return (new PhpCsFixer\Config())
 )
   ->setFinder($finder)->setIndent('  ');
 
-/*$finder = (new PhpCsFixer\Finder())
-  ->in(__DIR__);
-
-return (new PhpCsFixer\Config())
-  ->setRiskyAllowed(true)
-  ->registerCustomFixers([
-    $container->get(Symplify\CodingStandard\Fixer\ArrayNotation\StandaloneLineInMultilineArrayFixer::class),
-  ])
-  ->setRules([
-    '@PER-CS' => true,
-    '@PHP82Migration' => true,
-    'Symplify/codingstandard' => true,
-    'trailing_comma_in_multiline' => true,
-  ])
-  ->setFinder($finder);*/
