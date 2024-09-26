@@ -22,7 +22,7 @@ $services
 $container->compile();
 
 $finder = (new PhpCsFixer\Finder())
-  ->in('generated');
+    ->in(__DIR__);
 return (new PhpCsFixer\Config())
   ->setRiskyAllowed(true)
   ->registerCustomFixers([
@@ -30,11 +30,25 @@ return (new PhpCsFixer\Config())
   ])
   ->setRules(
   [
-    'align_multiline_comment' => ['comment_type' => 'all_multiline'],
-    'array_indentation' => true,
+      '@PER-CS' => true,
+      '@PHP82Migration' => true,
+      '@PSR12' => true,
+      'ordered_imports' => ['sort_algorithm' => 'alpha'],
+      'no_unused_imports' => true,
+      'unary_operator_spaces' => true,
+      'binary_operator_spaces' => true,
+      'method_argument_space' => [
+          'on_multiline' => 'ensure_fully_multiline',
+      ],
+      'array_indentation' => true,
     'array_syntax' => ['syntax' => 'short'],
     'backtick_to_shell_exec' => true,
-    'braces' => true,
+      'braces' => [
+          'allow_single_line_closure' => true,
+          'position_after_anonymous_constructs' => 'same',
+          'position_after_functions_and_oop_constructs' => 'next',
+          'position_after_control_structures' => 'same',
+      ],
     'indentation_type' => true,
     'method_chaining_indentation' => true,
     'Symplify/codingstandard' => true,
