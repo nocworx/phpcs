@@ -41,8 +41,8 @@ return (new PhpCsFixer\Config())
           'on_multiline' => 'ensure_fully_multiline',
       ],
       'array_indentation' => true,
-    'array_syntax' => ['syntax' => 'short'],
-    'backtick_to_shell_exec' => true,
+      'array_syntax' => ['syntax' => 'short'],
+      'backtick_to_shell_exec' => true,
       'braces' => [
           'allow_single_line_closure' => true,
           'position_after_anonymous_constructs' => 'same',
@@ -51,7 +51,10 @@ return (new PhpCsFixer\Config())
       ],
     'indentation_type' => true,
     'method_chaining_indentation' => true,
-    'Symplify/codingstandard' => true,
+    'Nocworx/codingstandard' => true,
+    'phpdoc_to_param_type' => false,
+    'phpdoc_to_property_type' => false,
+    'phpdoc_to_return_type' => false,
   ]
 )
   ->setFinder($finder)->setIndent('  ');
