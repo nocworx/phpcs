@@ -2,16 +2,20 @@
 <ruleset name="NocWorx Developers">
     <description>NocWorx Developers coding standard. PSR12 + Types</description>
     <rule ref="PSR12">
+        <exclude name="PSR12.Files.FileHeader.SpacingAfterBlock" />
+        <exclude name="PSR12.Files.FileHeader.SpacingInsideBlock" />
+        <exclude name="PSR12.Namespaces.CompoundNamespaceDepth.TooDeep" />
+    </rule>
+    <rule ref="PSR2">
         <exclude name="PSR2.Classes.PropertyDeclaration.Underscore"/>
         <exclude name="PSR2.Methods.MethodDeclaration.Underscore"/>
+        <exclude name="PSR2.Classes.ClassDeclaration.OpenBraceNewLine"/>
+        <exclude name="PSR2.ControlStructures.ControlStructureSpacing.SpacingAfterOpenBrace"/>
+        <exclude name="PSR2.Namespaces.UseDeclaration.MultipleDeclarations"/>
+        <exclude name="PSR2.Methods.FunctionCallSignature.Indent"/>
     </rule>
-    <rule ref="Squiz.Arrays.ArrayDeclaration">
-        <exclude name="Squiz.Arrays.ArrayDeclaration.KeyNotAligned"/>
-        <exclude name="Squiz.Arrays.ArrayDeclaration.ValueNotAligned"/>
-        <exclude name="Squiz.Arrays.ArrayDeclaration.CloseBraceNotAligned"/>
-        <exclude name="Squiz.Arrays.ArrayDeclaration.CloseBraceNewLine"/>
-        <exclude name="Squiz.Arrays.ArrayDeclaration.DoubleArrowNotAligned"/>
-        <exclude name="Squiz.Arrays.ArrayDeclaration.SingleLineNotAllowed"/>
+    <rule ref="Generic.PHP.RequireStrictTypes">
+        <exclude name="Generic.PHP.RequireStrictTypes.MissingDeclaration"/>
     </rule>
     <rule ref="Generic.Arrays.ArrayIndent"/>
     <rule ref="Generic.PHP.RequireStrictTypes"/>

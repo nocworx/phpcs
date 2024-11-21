@@ -51,14 +51,13 @@ return (new Config())
             'phpdoc_no_empty_return' => false,
             'phpdoc_no_useless_inheritdoc' => false,
             'concat_space' => ['spacing' => 'one'],
-            'braces_position' => [
-                'allow_single_line_anonymous_functions' => true,
-                'allow_single_line_empty_anonymous_classes' => true,
-                'anonymous_classes_opening_brace' => 'next_line_unless_newline_at_signature_end'
-            ],
             'method_argument_space' => [
                 'on_multiline' => 'ensure_fully_multiline',
             ],
+            'control_structure_braces' => true,
+            'clean_namespace' => true,
+            'single_import_per_statement' => true,
+            'single_line_after_imports' => true,
             'array_indentation' => true,
             'array_syntax' => ['syntax' => 'short'],
             'backtick_to_shell_exec' => true,
@@ -73,16 +72,4 @@ return (new Config())
             'phpdoc_to_return_type' => false,
         ]
     )
-    ->setFinder($finder)
-;
-
-/*
- * single_space_around_construct,
- * control_structure_braces,
- * control_structure_continuation_position,
- * declare_parentheses,
- * no_multiple_statements_per_line,
- * braces_position,
- * statement_indentation and
- * no_extra_blank_lines
- */
+    ->setFinder($finder);
