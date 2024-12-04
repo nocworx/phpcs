@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <ruleset name="NocWorx Developers">
     <description>NocWorx Developers coding standard. PSR12 + Types</description>
+    <config name="installed_paths" value="../../slevomat/coding-standard"/>
     <rule ref="PSR12">
         <exclude name="PSR12.Files.FileHeader.SpacingAfterBlock" />
         <exclude name="PSR12.Files.FileHeader.SpacingInsideBlock" />
