@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ca4a3c605bd92ca18c9cd669281ed7d6",
+    "content-hash": "fecf615393b08c6dec19d312b86a1d9c",
     "packages": [
         {
             "name": "clue/ndjson-react",
@@ -3126,16 +3126,16 @@
         },
         {
             "name": "symplify/coding-standard",
-            "version": "dev-main",
+            "version": "v1.0.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/mdk999/coding-standard.git",
-                "reference": "f1a466cfe4e218d4a312f5544c8812172908f85a"
+                "url": "https://github.com/nocworx/symplify-coding-standard.git",
+                "reference": "cbae8e4468e4b3ae2a9ba553a49650005c9ab539"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mdk999/coding-standard/zipball/f1a466cfe4e218d4a312f5544c8812172908f85a",
-                "reference": "f1a466cfe4e218d4a312f5544c8812172908f85a",
+                "url": "https://api.github.com/repos/nocworx/symplify-coding-standard/zipball/cbae8e4468e4b3ae2a9ba553a49650005c9ab539",
+                "reference": "cbae8e4468e4b3ae2a9ba553a49650005c9ab539",
                 "shasum": ""
             },
             "require": {
@@ -3156,7 +3156,6 @@
                 "tomasvotruba/class-leak": "^0.2",
                 "tracy/tracy": "^2.10"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -3190,7 +3189,7 @@
             ],
             "description": "Set of Symplify rules for PHP_CodeSniffer and PHP CS Fixer.",
             "support": {
-                "source": "https://github.com/mdk999/coding-standard/tree/v1.0.1"
+                "source": "https://github.com/nocworx/symplify-coding-standard/tree/v1.0.0"
             },
             "funding": [
                 {
@@ -3202,7 +3201,7 @@
                     "url": "https://www.paypal.me/rectorphp"
                 }
             ],
-            "time": "2024-09-25T17:07:43+00:00"
+            "time": "2024-10-09T14:46:08+00:00"
         },
         {
             "name": "symplify/rule-doc-generator-contracts",
@@ -5720,8 +5719,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "roave/security-advisories": 20,
-        "symplify/coding-standard": 20
+        "roave/security-advisories": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
