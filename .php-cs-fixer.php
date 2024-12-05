@@ -10,19 +10,22 @@ use Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigura
 use Symfony\Component\DependencyInjection\Loader\PhpFileLoader;
 use Symplify\CodingStandard\Fixer\ArrayNotation\StandaloneLineInMultilineArrayFixer;
 
-$folder = realpath(__DIR__);
+$real_folder_dir = realpath(__DIR__);
+$main_folder_name = basename(dirname(__DIR__));
+$main_vendor_dir = dirname(__DIR__,3);
+$current_folder = ($main_folder_name === 'nocworx') ? $main_vendor_dir : $real_folder_dir;
 $container = new ContainerBuilder();
 $phpLoader = new PhpFileLoader($container, new FileLocator());
 $instanceof = [];
-$configurator = new ContainerConfigurator($container, $phpLoader, $instanceof, $folder, __FILE__);
+$configurator = new ContainerConfigurator($container, $phpLoader, $instanceof, $current_folder, __FILE__);
 $services = $configurator->services();
 $services
     ->defaults()
     ->autowire()
     ->autowire()
     ->autoconfigure()
-    ->load('Symplify\CodingStandard\\', $folder . '/vendor/symplify/coding-standard/src/*')
-    ->load('PhpCsFixer\\', $folder . '/vendor/friendsofphp/php-cs-fixer/src/*')
+    ->load('Symplify\CodingStandard\\', $current_folder . '/vendor/symplify/coding-standard/src/*')
+    ->load('PhpCsFixer\\', $current_folder . '/vendor/friendsofphp/php-cs-fixer/src/*')
     ->set(StandaloneLineInMultilineArrayFixer::class)
     ->public(true)
 ;
