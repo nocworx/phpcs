@@ -27,13 +27,11 @@ $services
     ->load('Symplify\CodingStandard\\', $current_folder . '/vendor/symplify/coding-standard/src/*')
     ->load('PhpCsFixer\\', $current_folder . '/vendor/friendsofphp/php-cs-fixer/src/*')
     ->set(StandaloneLineInMultilineArrayFixer::class)
-    ->public(true)
-;
+    ->public(true);
 $container->compile();
 
 $finder = (new Finder())
-    ->in(__DIR__)
-;
+    ->in(__DIR__);
 
 return (new Config())
     ->setRiskyAllowed(true)
