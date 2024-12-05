@@ -10,26 +10,25 @@ use Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigura
 use Symfony\Component\DependencyInjection\Loader\PhpFileLoader;
 use Symplify\CodingStandard\Fixer\ArrayNotation\StandaloneLineInMultilineArrayFixer;
 
+$folder = realpath(__DIR__);
 $container = new ContainerBuilder();
 $phpLoader = new PhpFileLoader($container, new FileLocator());
 $instanceof = [];
-$configurator = new ContainerConfigurator($container, $phpLoader, $instanceof, __DIR__, __FILE__);
+$configurator = new ContainerConfigurator($container, $phpLoader, $instanceof, $folder, __FILE__);
 $services = $configurator->services();
 $services
     ->defaults()
     ->autowire()
     ->autowire()
     ->autoconfigure()
-    ->load('Symplify\CodingStandard\\', __DIR__ . '/vendor/symplify/coding-standard/src/*')
-    ->load('PhpCsFixer\\', __DIR__ . '/vendor/friendsofphp/php-cs-fixer/src/*')
+    ->load('Symplify\CodingStandard\\', $folder . '/vendor/symplify/coding-standard/src/*')
+    ->load('PhpCsFixer\\', $folder . '/vendor/friendsofphp/php-cs-fixer/src/*')
     ->set(StandaloneLineInMultilineArrayFixer::class)
-    ->public(true)
-;
+    ->public(true);
 $container->compile();
 
 $finder = (new Finder())
-    ->in(__DIR__)
-;
+    ->in(__DIR__);
 
 return (new Config())
     ->setRiskyAllowed(true)
