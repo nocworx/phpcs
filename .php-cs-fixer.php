@@ -63,7 +63,7 @@ return (new Config())
             'array_indentation' => true,
             'array_syntax' => ['syntax' => 'short'],
             'backtick_to_shell_exec' => true,
-            'no_extra_blank_lines' => true,
+            'no_extra_blank_lines' => ['tokens' => ['use']],
             'single_space_around_construct' => true,
             'indentation_type' => true,
             'no_trailing_whitespace' => true,
