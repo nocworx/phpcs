@@ -52,6 +52,7 @@ return (new Config())
             'phpdoc_no_package' => false,
             'phpdoc_no_empty_return' => false,
             'phpdoc_no_useless_inheritdoc' => false,
+            'phpdoc_scalar' => false,
             'concat_space' => ['spacing' => 'one'],
             'method_argument_space' => [
                 'on_multiline' => 'ensure_fully_multiline',
