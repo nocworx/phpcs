@@ -31,3 +31,7 @@
         <type>warning</type>
     </rule>
 </ruleset>
+
+<!-- brace same line as class/function declaration -->
+<rule ref="Generic.Classes.OpeningBraceSameLine" />
+<rule ref="Generic.Functions.OpeningFunctionBraceKernighanRitchie" />
