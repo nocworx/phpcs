@@ -41,18 +41,12 @@ return (new Config())
     ->setRules(
         [
             '@PSR12' => true,
-            '@PhpCsFixer' => true,
             'blank_line_after_opening_tag' => true,
             'linebreak_after_opening_tag' => true,
             'ordered_imports' => ['sort_algorithm' => 'alpha'],
             'no_unused_imports' => true,
             'unary_operator_spaces' => true,
             'binary_operator_spaces' => true,
-            'no_superfluous_phpdoc_tags' => false,
-            'phpdoc_no_package' => false,
-            'phpdoc_no_empty_return' => false,
-            'phpdoc_no_useless_inheritdoc' => false,
-            'phpdoc_scalar' => false,
             'concat_space' => ['spacing' => 'one'],
             'method_argument_space' => [
                 'on_multiline' => 'ensure_fully_multiline',
