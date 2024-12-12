@@ -67,6 +67,7 @@ return (new Config())
             'phpdoc_to_param_type' => false,
             'phpdoc_to_property_type' => false,
             'phpdoc_to_return_type' => false,
+            'multiline_whitespace_before_semicolons' => ['strategy' => 'no_multi_line'],
         ]
     )
     ->setFinder($finder);
